@@ -65,7 +65,7 @@ impl EventHandler for Stage {
         // TODO: handle this output so that hyperlinks, etc. work
         let (_, paint_jobs) = self.egui_ctx.end_frame();
 
-        self.painter.paint(ctx, paint_jobs, self.egui_ctx.texture());
+        self.painter.paint(ctx, paint_jobs, &self.egui_ctx.texture());
     }
 }
 
